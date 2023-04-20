@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Gallery</title>
+  <link rel="stylesheet" type="text/css" href="gallery.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Movies Gallery</h1>
+  </header>
+
+  <aside class="filter-menu">
+    <button class="filter-button" data-filter="all">All</button>
+    <button class="filter-button" data-filter="tollywood">Tollywood</button>
+    <button class="filter-button" data-filter="bollywood">Bollywood</button>
+    <button class="filter-button" data-filter="hollywood">Hollywood</button>
+  </aside>
+
+
+  <section>
+    <div class="image-container">
+      <div class="image-wrapper tollywood">
+        <img class="tollywood" src="./images/tollywood-1.jpg" alt="tollywood-poster" title="RRR"
+          onclick="showpop(this)" />
+        <div class="image-caption">
+          Experience the power of revolution and the strength of brotherhood in the epic period drama 'RRR'.
+        </div>
+      </div>
+      <div class="pop-up-container">
+        <span class="close" onclick="hidepop()">&times;</span>
+        <img class="pop-up-image" src="" alt="" />
+        <div class="pop-up-caption"></div>
+      </div>
+      <div class="image-wrapper bollywood">
+        <img class="bollywood" src="./images/bollywood-1.jpg" alt="bollywood-poster" title="RA.One"
+          onclick="showpop(this)" />
+        <div class="image-caption">
+          Experience a high-tech, as a video game comes to life and a hero
+          emerges to save the world in 'RA.One'.
+        </div>
+      </div>
+      <div class="image-wrapper hollywood">
+        <img class="hollywood" src="./images/hollywood-1.jpg" alt="hollywood-poster" title="John-Wick"
+          onclick="showpop(this)" />
+        <div class="image-caption">
+          Experience the thrilling action and intense violence in 'John Wick'.
+        </div>
+      </div>
+      <div class="image-wrapper tollywood">
+        <img class="tollywood" src="./images/tollywood-2.jpg" alt="tollywood-poster" title="Bahubali-2 The Conclusion"
+          onclick="showpop(this)" />
+        <div class="image-caption">
+          Witness the ultimate battle for the throne.The central conflict of the movie, which revolves around the fight
+          for power between the two main characters, Baahubali and Bhallaladeva.
+        </div>
+      </div>
+      <div class="image-wrapper bollywood">
+        <img class="bollywood" src="./images/bollywood-2.jpg" alt="bollywood-poster" title="Brahmastra"
+          onclick="showpop(this)" />
+        <div class="image-caption">
+          Brahmastra: Unleash the ultimate power.
+        </div>
+      </div>
+      <div class="image-wrapper hollywood">
+        <img class="hollywood" src="./images/hollywood-2.jpg" alt="hollywood-poster"
+          title="Batman v Superman: Dawn of Justice" onclick="showpop(this)" />
+        <div class="image-caption">
+          Experience the greatest gladiator match in the history of the world
+        </div>
+      </div>
+      <div class="image-wrapper tollywood">
+        <img class="tollywood" src="./images/tollywood-3.jpg" alt="tollywood-poster" title="Balagam"
+          onclick="showpop(this)" />
+        <div class="image-caption">
+          Experience the journey of a man in pursuit of justice
+        </div>
+      </div>
+      <div class="image-wrapper bollywood">
+        <img class="bollywood" src="./images/bollywood-3.jpg" alt="bollywood-poster" title="Shershaah"
+          onclick="showpop(this)" />
+        <div class="image-caption">
+          Courage, sacrifice, and patriotism - the story of a hero
+        </div>
+      </div>
+      <div class="image-wrapper hollywood">
+        <img class="hollywood" src="./images/hollywood-3.jpg" alt="hollywood-poster" title="Caption-Marvel"
+          onclick="showpop(this)" />
+        <div class="image-caption">
+          Assemble your heroes, save the universe
+        </div>
+      </div>
+      <div class="image-wrapper tollywood">
+        <img class="tollywood" src="./images/tollywood-4.jpg" alt="tollywood-poster" title="Pushpa"
+          onclick="showpop(this)" />
+        <div class="image-caption">
+          Get ready for a thrilling ride through the untamed forests of Pushpa
+        </div>
+      </div>
+      <div class="image-wrapper bollywood">
+        <img class="bollywood" src="./images/bollywood-4.jpg" alt="bollywood-poster" title="WAR"
+          onclick="showpop(this)" />
+        <div class="image-caption">
+          Enter a world of high-octane action and intense espionage with War
+        </div>
+      </div>
+      <div class="image-wrapper hollywood">
+        <img class="hollywood" src="./images/hollywood-4.jpg" alt="hollywood-poster" title="Avengers-End Game"
+          onclick="showpop(this)" />
+        <div class="image-caption">
+          Avenge the fallen and witness the end of an era with Avengers: Endgame
+        </div>
+      </div>
+      <div class="image-wrapper tollywood">
+        <img class="tollywood" src="./images/tollywood-5.jpg" alt="tollywood-poster" title="Legend"
+          onclick="showpop(this)" />
+        <div class="image-caption">
+          Step into the world of a legendary actor with Balakrishna
+        </div>
+      </div>
+      <div class="image-wrapper bollywood">
+        <img class="bollywood" src="./images/bollywood-5.jpg" alt="bollywood-poster" title="Dhoom-3"
+          onclick="showpop(this)" />
+        <div class="image-caption">
+          Get ready for the ultimate heist and chase with Dhoom 3
+        </div>
+      </div>
+      <div class="image-wrapper hollywood">
+        <img class="hollywood" src="./images/hollywood-5.jpg" alt="hollywood-poster" title="Harry-Potter"
+          onclick="showpop(this)" />
+        <div class="image-caption">
+          Step into a world of magic and wonder with Harry Potter
+        </div>
+      </div>
+      <div class="image-wrapper tollywood">
+        <img class="tollywood" src="./images/tollywood-6.jpg" alt="tollywood-poster" title="Magadheera"
+          onclick="showpop(this)" />
+        <div class="image-caption">
+          Relive an epic tale of love and valor with Magadheera
+        </div>
+      </div>
+      <div class="image-wrapper bollywood">
+        <img class="bollywood" src="./images/bollywood-6.jpg" alt="bollywood-poster" title="Aashiqui-2"
+          onclick="showpop(this)" />
+        <div class="image-caption">
+          Fall in love all over again with Aashiqui 2
+        </div>
+      </div>
+      <div class="image-wrapper hollywood">
+        <img class="hollywood" src="./images/hollywood-6.jpg" alt="hollywood-poster" title="Spider-Man: No Way Home"
+          onclick="showpop(this)" />
+        <div class="image-caption">
+          Get ready for a web-slinging, multiverse adventure with Spider-Man: No Way Home
+        </div>
+      </div>
+      <div class="image-wrapper tollywood">
+        <img class="tollywood" src="./images/tollywood-7.webp" alt="tollywood-poster" title="Mahanati"
+          onclick="showpop(this)" />
+        <div class="image-caption">
+          Step into the golden era of Telugu cinema with Mahanati
+        </div>
+      </div>
+      <div class="image-wrapper bollywood">
+        <img class="bollywood" src="./images/bollywood-7.jpg" alt="bollywood-poster" title="Bajirao Mastani"
+          onclick="showpop(this)" />
+        <div class="image-caption">
+          Experience the grandeur and passion of a legendary love story with Bajirao Mastani
+        </div>
+      </div>
+      <div class="image-wrapper hollywood">
+        <img class="hollywood" src="./images/hollywood-7.jpg" alt="hollywood-poster" title="Deadpool"
+          onclick="showpop(this)" />
+        <div class="image-caption">
+          Get ready for a hilarious and irreverent ride with Deadpool
+        </div>
+      </div>
+      <div class="image-wrapper tollywood">
+        <img class="tollywood" src="./images/tollywood-8.jpg" alt="tollywood-poster" title="Jathi Ratnalu"
+          onclick="showpop(this)" />
+        <div class="image-caption">
+          Laugh out loud with Jathi Ratnalu
+        </div>
+      </div>
+      <div class="image-wrapper bollywood">
+        <img class="bollywood" src="./images/bollywood-8.jpg" alt="bollywood-poster" title="Pataan"
+          onclick="showpop(this)" />
+        <div class="image-caption">
+          Experience the thrill of an undercover mission with Pataan
+        </div>
+      </div>
+      <div class="image-wrapper hollywood">
+        <img class="hollywood" src="./images/hollywood-8.jpg" alt="hollywood-poster" title="Thor"
+          onclick="showpop(this)" />
+        <div class="image-caption">
+          Unleash the power of the gods with Thor
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="gallery.js"></script>
+</body>
+
+</html>
